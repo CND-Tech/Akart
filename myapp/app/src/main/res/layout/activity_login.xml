@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="331dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="331dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="forgot Password?"
+        android:textColor="#302299"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="#2C77F7"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/forgot_pass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forgot_pass"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="43dp"
+        android:layout_height="58dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/reglink"
+        android:layout_width="169dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:text="New User? Register Here"
+        android:textColor="#302299"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_google"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_google"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_google" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_google"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="-OR-"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

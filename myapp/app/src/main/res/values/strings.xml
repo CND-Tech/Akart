@@ -1,0 +1,48 @@
+<resources>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="app_name">Akart</string>
+    <string name="Semester_prompt">Semester</string>
+    <string-array name="Semester_array">
+        <item>Sem I</item>
+        <item>Sem II</item>
+        <item>Sem III</item>
+        <item>Sem IV</item>
+        <item>Sem V</item>
+        <item>Sem VI</item>
+        <item>Sem VII</item>
+        <item>Sem VIII</item>
+    </string-array>
+    <string name="Stream_prompt">Stream</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string-array name="stream_array">
+        <item>Computer</item>
+        <item>IT</item>
+        <item>EXTC</item>
+        <item>Electrical</item>
+        <item>Mechanical</item>
+    </string-array>
+    <string name="Item_prompt">Items</string>
+    <string-array name="items">
+        <item>Journels</item>
+        <item>Hard_Bounds</item>
+        <item>Graphs</item>
+        <item>Index</item>
+    </string-array>
+    <string name="total_item">Count</string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+</resources>

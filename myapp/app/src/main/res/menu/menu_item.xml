@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group>
+        <item android:id="@+id/home"
+            android:title="Home"
+            android:icon="@android:drawable/ic_search_category_default">
+        </item>
+                <item android:id="@+id/menu_clear"
+                    android:title="Clear List"
+                    android:icon="@drawable/ic_clear_all_black_24dp"></item>
+                <item android:id="@+id/menu_profile"
+                    android:title="Update Profile"
+                    android:icon="@drawable/ic_person_outline_black_24dp"
+                    ></item>
+        </group>
+        <group>
+                <item android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@android:drawable/ic_menu_close_clear_cancel">
+                </item>
+        </group>
+</menu>

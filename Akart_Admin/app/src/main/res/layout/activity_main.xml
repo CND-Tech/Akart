@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_alignStart="@+id/details"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="35dp"
+        android:text="Name"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name"
+        android:layout_alignStart="@+id/text_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Semester"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_alignStart="@+id/details"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="37dp"
+        android:text="Roll_no"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_alignStart="@+id/details"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="36dp"
+        android:hint="Name"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="74dp"
+        android:hint="Semester"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/roll_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_alignEnd="@+id/name"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="-186dp"
+        android:hint="Roll_no"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Details"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="135dp"
+        android:text="Items"
+        android:textColor="#000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="138dp"
+        android:layout_toRightOf="@+id/items"
+        android:text="Qty"
+        android:textColor="#000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="139dp"
+        android:layout_toRightOf="@+id/qty"
+        android:text="Cost"
+        android:textColor="#000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_journel"
+        android:text="1) Journel"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/items"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_hardbounds"
+        android:text="2) Hard Bounds"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/text_journel"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/text_graphs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_hardbounds"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="3) Graphs"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_graphs"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="4) Index"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/journel_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qty"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="27dp"
+
+        android:layout_toRightOf="@+id/text_journel"
+        android:hint="qty"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/hardbound_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/journel_qty"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/text_hardbounds"
+        android:hint="qty"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/cost_journel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qty"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/journel_qty"
+        android:hint="costs"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/cost_hardbound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cost_journel"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/hardbound_qty"
+        android:hint="costs"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/cost_graphs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cost_hardbound"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/graph_qty"
+        android:hint="costs"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/cost_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cost_graphs"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/index_qty"
+        android:hint="costs"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/graph_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hardbound_qty"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/text_graphs"
+        android:hint="qty"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/index_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph_qty"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_index"
+        android:hint="qty"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_index"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="34dp"
+        android:text="TOTAL"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cost_index"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/text_total"
+        android:hint="total"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_scan"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:textColor="#3F51B5"
+        android:text="Scan QR"/>
+
+</RelativeLayout>
